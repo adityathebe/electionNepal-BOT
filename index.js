@@ -95,7 +95,7 @@ app.post('/webhook/', function (req, res) {
                     case 8:
                         var aditya =   {
                             title: "Aditya Thebe",
-                            subtitle: "Coolest Person on earth",
+                            subtitle: "Coolest Gentleman on earth",
                             img_url: "http://i.imgur.com/AI4znI6.jpg",
                             url: "http://adityathebe.com",
                             btn_title: "Check out his blog"
@@ -105,17 +105,14 @@ app.post('/webhook/', function (req, res) {
                     case 9:
                         saygoodbye(sender);
                         break;
-                    case 10: // Asking my name
+                    case 10:
                         sendTextMessage(sender, "Limbu - Bot Limbu");
                         break;
-                    case 11: // Compliments
+                    case 11:    // Compliments
                         reply_compliments(sender);
                         break;
                     case 12:
                         ku_result(sender);
-                        break;
-                    case 13:
-                        sendButton(sender);
                         break;
                     default:
                         sendTextMessage(sender,"Figuring it out!");
@@ -169,7 +166,7 @@ app.post('/webhook/', function (req, res) {
                                 })
                             }
                         } else {
-                            var tempData = "";
+                            var tempData = "Choose your Municipality\n\n";
                             for (var j = 0; j < municipalityName.length; j++) {
                                 tempData += j+1 + ". " + municipalityName[j].english_name + '\n';
                             }
@@ -261,7 +258,7 @@ function kunews(txt)    {
 }
 
 function inform_user(txt)   {
-    var inform_msg = "Hi, I am BotLimbu, a Utility bot! You can ask for things like:\n\n•election mechi\n• KU result\n• Latest KU news\n• Jokes\n• Flip a coin\n• Facts\n• Latest News\n\nAnd if you ever need help, just type HELP.\n\nI'm always learning, so do come back and say hi from time to time 🙂";
+    var inform_msg = "Hi, I am BotLimbu, a Utility bot! You can ask for things like:\n\n• election mechi\n• KU result\n• Latest KU news\n• Jokes\n• Flip a coin\n• Facts\n• Latest News\n\nAnd if you ever need help, just type HELP.\n\nI'm always learning, so do come back and say hi from time to time 🙂";
     sendTextMessage(txt,inform_msg);
 }
 

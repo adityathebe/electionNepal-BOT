@@ -20,6 +20,5 @@ module.exports = [
 	    ["what is your name", "whats your name", "your name", "do you have a name", "tell me your name"], // Name command
 	    ["youre awesome","so cool","thats awesome", "awesome","wonderful","amazing","interesting","impressive","great",
 	    	"inspiring","nice","wow", "you are intelligent", "hilarious", "funny"], // COmpliments
-	    ["ku result","result aayo", "result aayo ","result","results",],
-	    ["button", "buttons"]
+	    ["ku result","result aayo", "result aayo ","result","results",]
 	]
