@@ -114,9 +114,9 @@ app.post('/webhook/', function (req, res) {
 function electionStat(txt, place, identifier)    {
     var url;
     if(identifier == 1)
-        url = "https://electionnepal.herokuapp.com/location/" + place;
+        url = "https://election-nepal-api.herokuapp.com/location/" + place;
     else
-        url  = "https://electionnepal.herokuapp.com/id/" + place;
+        url  = "https://election-nepal-api.herokuapp.com/id/" + place;
 
     request({url: url, json: true}, function (error, response, body) {
         if(!error)  {
